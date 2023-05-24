@@ -90,7 +90,7 @@
     overflow: scroll;
     padding: 40px;
     background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
-
+    max-height: 853px;
     background-position: 414px 100%;
     background-size: 469px;
   }
@@ -191,7 +191,7 @@
 }
 .yourorder-modal-form-checkbox {
   width: 100%;
-  display: flex;
+  display: block;
   justify-content: space-between;
   position: relative;
   margin: 0;
@@ -203,6 +203,7 @@
 
 @media screen and (min-width: 768px) {
   .yourorder-modal-form-checkbox {
+    display: flex;
     flex-direction: column;
     width: 200px;
 
