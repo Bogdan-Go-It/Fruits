@@ -1,0 +1,246 @@
+.header {
+  background-color: var(--white-color);
+}
+
+.menu-header {
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.mob-icon {
+  fill: var(--white-color);
+}
+
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-mobile-but {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-mobile-but {
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    fill: var(--white-color);
+    stroke: var(--red-color);
+  }
+}
+.heder-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .heder-nav-menu {
+    display: block;
+  }
+}
+
+.header-logo-icon {
+  fill: var(--red-color);
+  margin-right: 8px;
+}
+
+.header-logo-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--red-color);
+}
+
+.header-position {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header-list {
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-link {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.04em;
+    display: inline-block;
+    color: var(--red-color);
+    padding: 16px 0 16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--pink-color);
+}
+
+.header-logo {
+  padding: 16px 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.mobile-header {
+  background-color: var(--white-color);
+}
+.menu-toggle {
+  min-height: 24px;
+  min-width: 24px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  fill: var(--red-color);
+}
+
+.menu-container .modal-icon {
+  display: block;
+  stroke: var(--red-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--red-color);
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  transform: translateX(0);
+  pointer-events: initial;
+}
+
+.menu-container.is-open .menu-toggle {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  margin-top: 124px;
+}
+
+.mobile-menu .link {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--white-color);
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-link:hover,
+.mobile-link:focus {
+  color: var(--black-color);
+}
+
+.mobile-but {
+  min-height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  fill: var(--white-color);
+}
+
+.close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  stroke: var(--red-color);
+}

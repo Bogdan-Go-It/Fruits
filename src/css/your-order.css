@@ -1,0 +1,507 @@
+.conteiner-icon {
+  width: 80px;
+  height: 37px;
+  display: flex;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .conteiner-icon {
+    width: 65px;
+    height: 28px;
+  }
+}
+.yourorder-modal-icon-open {
+  fill: #ffffff;
+  margin-top: auto;
+}
+.btn-uppertitle {
+  margin: auto;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+}
+@media screen and (max-width: 767px) {
+  .btn-uppertitle {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.backdrop {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: var(--bg-thank-you-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.yourorder-modal {
+  display: block;
+  eft: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 101;
+  max-height: 903px;
+  /* height: calc(100% - 2%); */
+  width: calc(100% - 2%);
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: scroll;
+  border-radius: 20px;
+  padding: 20px;
+  background: var(--white-color);
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+@media screen and (min-width: 375px) {
+  .yourorder-modal {
+    max-height: 903px;
+    /* height: calc(100%-2%); */
+    width: 335px;
+    /* max-height: 853px; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal {
+    width: 704px;
+    overflow: scroll;
+    padding: 40px;
+    background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
+
+    background-position: 414px 100%;
+    background-size: 469px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .yourorder-modal {
+      background-image: url(../img/modal-your-oder/471x458-dama-desk@2x.png);
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal {
+    max-height: 911px;
+    width: 891px;
+    left: 50%;
+    padding: 40px;
+    background-position: 420px 100%;
+    background-size: 471px;
+    background-image: url(../img/modal-your-oder/471x458-dama-desk@1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .yourorder-modal {
+      background-image: url(../img/modal-your-oder/471x458-dama-desk@2x.png);
+    }
+  }
+}
+.yourorder-modal-close-btn {
+  position: absolute;
+  padding: 0;
+  top: 22px;
+  right: 20px;
+  border: none;
+  background: none;
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-close-btn {
+    top: 20px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.yourorder-modal-icon-close {
+  fill: var(--red-color);
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-icon-close {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.yourorder-modal-title {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--red-color);
+  text-shadow: var(--shadow);
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+
+.container-form-checkbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .container-form-checkbox {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-form-checkbox {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.yourorder-modal-form-checkbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 119px;
+  border-radius: 20px;
+  padding-right: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox {
+    flex-direction: column;
+    width: 200px;
+
+    height: 250px;
+    padding-right: 0;
+    padding-bottom: 14px;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox {
+    flex-direction: column;
+    width: 257px;
+    height: 308px;
+    padding-top: 40px;
+  }
+}
+.checkbox-strawberrye {
+  background: var(--peach-color);
+}
+.checkbox-apple {
+  background: var(--second-yellow-color);
+}
+.checkbox-fruits {
+  background: var(--second-green-color);
+}
+.yourorder-modal-form-checkbox-imput {
+  position: absolute;
+
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--white-color);
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-imput {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-imput {
+    width: 20px;
+    height: 20px;
+  }
+}
+.yourorder-modal-form-checkbox-icon {
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  pointer-events: none;
+  fill: none;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-icon {
+    width: 8px;
+    height: 8px;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-icon {
+    width: 8px;
+    height: 8px;
+    top: 20px;
+    right: 20px;
+  }
+}
+.yourorder-modal-form-checkbox-imput:checked
+  + .yourorder-modal-form-checkbox-icon {
+  fill: var(--white-color);
+}
+/* .container-text {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container-text {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+} */
+.yourorder-modal-form-checkbox-head {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: var(--white-color);
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-head {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.yourorder-modal-form-checkbox-uppertitle {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  margin-left: 20px;
+  color: var(--white-color);
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-uppertitle {
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-uppertitle {
+    font-size: 18px;
+  }
+}
+.yourorder-modal-form-checkbox-str-img {
+  margin: auto 0;
+  width: 88px;
+  height: 95px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-str-img {
+    margin: auto;
+    width: 133px;
+    height: 148px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-str-img {
+    margin: auto;
+    width: 173px;
+    height: 196px;
+  }
+}
+.yourorder-modal-form-checkbox-appl-img {
+  margin: auto 0;
+  width: 106px;
+  height: 95px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-appl-img {
+    margin: auto;
+    width: 172px;
+    height: 148px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-appl-img {
+    margin: auto;
+    width: 229px;
+    height: 196px;
+  }
+}
+.yourorder-modal-form-checkbox-frut-img {
+  margin: auto 0;
+  width: 107px;
+  height: 95px;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-form-checkbox-frut-img {
+    margin: auto;
+    width: 172px;
+    height: 148px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-form-checkbox-frut-img {
+    margin: auto;
+    width: 229px;
+    height: 196px;
+  }
+}
+
+.container-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container-input {
+    width: 360px;
+    gap: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-input {
+    width: 360px;
+    gap: 14px;
+  }
+}
+.yourorder-modal-label {
+  height: 46px;
+  width: 100%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: #000000;
+  opacity: 0.5;
+  outline: var(--red-color);
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-label {
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-label {
+    height: 48px;
+  }
+}
+.yourorder-modal-input {
+  height: 100%;
+  width: 100%;
+  padding-left: 24px;
+  border: 1px solid var(--black-color);
+  border-radius: 100px;
+}
+.yourorder-modal-input:valid {
+  outline-color: var(--outline-total-green);
+}
+.yourorder-modal-input:invalid {
+  outline-color: var(--outline-total-red);
+}
+.yourorder-modal-label-texterea {
+  height: 132px;
+  width: 100%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: var(--black-color);
+  opacity: 0.5;
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-label-texterea {
+    height: 145px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-label-texterea {
+    height: 145px;
+  }
+}
+.yourorder-modal-textarea {
+  padding: 12px 24px;
+  height: 100%;
+  width: 100%;
+  padding-left: 24px;
+  border: 1px solid var(--black-color);
+  border-radius: 20px;
+}
+
+.yourorder-modal-submit-btn {
+  border: none;
+  background: var(--submit-green-color);
+  border-radius: 100px;
+  width: 92px;
+  height: 42px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  .yourorder-modal-submit-btn {
+    height: 48px;
+    width: 114px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .yourorder-modal-submit-btn {
+    height: 48px;
+    width: 114px;
+  }
+}
